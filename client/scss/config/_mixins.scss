@@ -1,0 +1,8 @@
+// all out mixins here
+//Transition mixin
+@mixin transiton-crossbrowser($prop: all, $duration: 0.5s, $effect: ease-out) {
+	-webkit-transition: $prop $duration $effect;
+    -moz-transition: $prop $duration $effect;
+    -o-transition: $prop $duration $effect;
+    transition: $prop $duration $effect;
+}

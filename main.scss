@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "client/scss/normailize";
+
+/*
+  ZURB Foundation components:
+  Import the building blocks you need for your project.
+  Reducing the number of imported components will optimize page speed.
+*/
+
+@import 'client/scss/config/mixins';
+@import 'client/scss/config/cutom-settings';
+@import 'client/scss/config/settings';
+@import 'client/scss/site/footer';
+@import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";
+
+
+//Site stuff here
+@import 'client/scss/site/login-buttons';
+@import 'client/scss/site/alertboxes';
+@import 'client/scss/site/blockly';

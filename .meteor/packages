@@ -1,0 +1,15 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+autopublish
+insecure
+urigo:angular
+matthew:foundation5-sass
+fortawesome:fontawesome
+angularui:angular-ui-router
+urigo:angular-ui-router
+vimes1984:foundation-angular-admin
