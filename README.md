@@ -1,7 +1,7 @@
 # foundation-admin-ui-example
-An example simple app containing 3 pages admin / help / home
+An example meteor app for https://github.com/vimes1984/foundation-angular-admin
 to run this git clone this into a directory and run
 ```bash
 meteor
 ```
-enjoy :D 
+enjoy :D
