@@ -1,0 +1,24 @@
+<meteor-include src="topbar"></meteor-include>
+<div class="row">
+  <div class="large-6 columns large-centered">
+    <h1>Hello: {{ currentUser.profile.name }}</h1>
+    <p>This is the user account...</p>
+    <form>
+        <input type="text" disabled ng-model="formobject.username" />
+        <input type="text" ng-model="formobject.profile.additional" />
+        <input type="text" ng-model="formobject.profile.name" />
+
+        <button ng-click="saveform()">Save changes</button>
+    </form>
+
+    <h2>My Roles</h2>
+    <ul>
+      <li ng-repeat="role in formobject.roles">{{role}}</li>
+    </ul>
+
+    <ul>
+      <li><a href="/changepass">Change password</a></li>
+    </ul>
+  </div>
+</div>
+<meteor-include src="footer"></meteor-include>

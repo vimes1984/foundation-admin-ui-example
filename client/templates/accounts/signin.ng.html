@@ -1,0 +1,28 @@
+<meteor-include src="topbar"></meteor-include>
+<div class="row">
+  <div class="large-6 columns large-centered">
+    <form>
+      <h2>Sign in</h2>
+      <div data-alert class="alert-box alert" ng-show="showerror">
+        <h1>{{error.reason}}</h1>
+        <a href="#" class="close">&times;</a>
+      </div>
+      <input type="text" class="" placeholder="Username" value="user.name" ng-model="user.name"/>
+      <input type="password" class="" placeholder="Password" value="user.password" ng-model="user.password"/>
+      <button class="button expand" ng-click="signin()">
+        Sign in
+      </button>
+    </form>
+    <div class="row">
+      <div class="large-6 columns">
+        <div class="text-center">
+          <a href="/requestresetpassword">Forgot password</a>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="/register">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
+<meteor-include src="footer"></meteor-include>

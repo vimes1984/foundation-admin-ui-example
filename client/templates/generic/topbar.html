@@ -11,9 +11,15 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li><a href="/home">Help</a></li>
+          <li><a href="/home">Home</a></li>
           <li><a href="/help">Help</a></li>
-          <li><a href="/admin">Admin</a></li>
+
+          <li ng-if="$root.currentUser"><a href="/my-account">Hello: {{ currentUser.profile.name }}</a></li>
+          <li ng-if="$root.currentUser"><a href="/admin">Admin Page</a></li>
+          <li ng-if="$root.currentUser"><a href="#" ng-click="signOut()">Sign out</a></li>
+
+          <li ng-if="!$root.currentUser"><a href="/sign-in">Sign In</a></li>
+          <li ng-if="!$root.currentUser"><a href="/register">Register</a></li>
         </ul>
       </section>
     </nav>

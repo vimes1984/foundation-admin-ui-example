@@ -1,0 +1,15 @@
+<meteor-include src="topbar"></meteor-include>
+<div class="row">
+  <div class="large-6 columns large-centered">
+    <h2>Introduce your new password NOT WORKING</h2>
+    <form>
+      <input type="email"      ng-model="newuser.email"       placeholder="Email" value=""/>
+      <button class="button expand" ng-click="register()">Reset Now</button>
+    </form>
+    <div data-alert class="alert-box" ng-class="alertclass" ng-show="showalert">
+      <p>{{message}}</p>
+      <a href="#" class="close">&times;</a>
+    </div>
+  </div>
+</div>
+<meteor-include src="footer"></meteor-include>
