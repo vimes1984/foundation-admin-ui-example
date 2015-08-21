@@ -3,12 +3,6 @@
 angular.module('yetibox').config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
   function($urlRouterProvider, $stateProvider, $locationProvider){
 
-    $urlRouterProvider.rule(function ($injector, $location) {
-          //what this function returns will be set as the $location.url
-          console.log($injector);
-          console.log($location);
-           // because we've returned nothing, no state change occurs
-       });
 
     $stateProvider
     .state('signin', {
