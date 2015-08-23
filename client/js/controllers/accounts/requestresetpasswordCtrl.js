@@ -1,5 +1,5 @@
 //resetpasswordCtrl controller
-angular.module('yetibox').controller('requestresetpasswordCtrl', ['$scope', '$meteor', function($scope, $meteor){
+MainApp.controller('requestresetpasswordCtrl', ['$scope', '$meteor', function($scope, $meteor){
 
   $scope.resetpassword = function(){
     $meteor.forgotPassword({email: $scope.email}).then(function(){

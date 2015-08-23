@@ -1,5 +1,5 @@
 //helpsurvival controller
-angular.module('yetibox').controller('signinCtrl', ['$scope', '$meteor', '$state', function($scope, $meteor, $state){
+MainApp.controller('signinCtrl', ['$scope', '$meteor', '$state', function($scope, $meteor, $state){
   //default values
   $scope.user       = {};
   $scope.showerror  = false;

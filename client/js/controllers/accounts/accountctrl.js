@@ -1,5 +1,5 @@
 //helpsurvival controller
-angular.module('yetibox').controller('accountctrl', ['$scope', '$meteor', '$rootScope', function($scope, $meteor, $rootScope){
+MainApp.controller('accountctrl', ['$scope', '$meteor', '$rootScope', function($scope, $meteor, $rootScope){
   console.log( $rootScope.currentUser );
   $scope.formobject = $rootScope.currentUser;
   $scope.saveform = function(){

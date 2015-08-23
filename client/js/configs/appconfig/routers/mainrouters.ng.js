@@ -1,6 +1,6 @@
 
 
-angular.module('yetibox').config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
+MainApp.config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
   function($urlRouterProvider, $stateProvider, $locationProvider){
 
     $locationProvider.html5Mode(true);

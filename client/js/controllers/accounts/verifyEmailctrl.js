@@ -1,5 +1,5 @@
 //changepassctrl controller
-angular.module('yetibox').controller('verifyEmailctrl', ['$scope', '$meteor', '$rootScope', '$stateParams', function($scope, $meteor, $rootScope, $stateParams){
+MainApp.controller('verifyEmailctrl', ['$scope', '$meteor', '$rootScope', '$stateParams', function($scope, $meteor, $rootScope, $stateParams){
 
   console.log($stateParams);
   $meteor.verifyEmail($stateParams.token).then(function(){

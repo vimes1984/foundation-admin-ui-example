@@ -1,6 +1,6 @@
 
 
-angular.module('yetibox').config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
+MainApp.config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
   function($urlRouterProvider, $stateProvider, $locationProvider){
 
 
@@ -82,7 +82,7 @@ angular.module('yetibox').config(['$urlRouterProvider', '$stateProvider', '$loca
     });
 
 }]);
-angular.module('yetibox').run(["$rootScope", "$state", function($rootScope, $state) {
+MainApp.run(["$rootScope", "$state", function($rootScope, $state) {
   $rootScope.$on('$stateChangeStart', function(){
     $(document).foundation('reflow');
   });

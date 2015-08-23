@@ -1,5 +1,5 @@
 //registerCtrl controller
-angular.module('yetibox').controller('registerCtrl', ['$scope', '$meteor', '$state', function($scope, $meteor, $state){
+MainApp.controller('registerCtrl', ['$scope', '$meteor', '$state', function($scope, $meteor, $state){
 
   $scope.register = function(){
     $meteor.createUser({

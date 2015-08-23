@@ -1,1 +1,2 @@
-angular.module('yetibox', ['angular-meteor', 'ui.router', 'adminui']);
+angular.module('SampleApp', ['angular-meteor', 'ui.router', 'adminui']);
+MainApp  = angular.module('SampleApp');
