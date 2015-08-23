@@ -26,3 +26,5 @@ enjoy :D
 
 ## Notes
 If you want to swap the name of the app t your own go to 'client/js/configs/appconfig/appinit/app.ng.js' and change the two instances of 'SampleApp' to your own app name then go to index.html and swap it there aswell.
+
+Angular is configured to use [[ ]] not {{ }}.. 

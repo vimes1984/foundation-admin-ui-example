@@ -14,7 +14,7 @@
           <li><a href="/home">Home</a></li>
           <li><a href="/help">Help</a></li>
 
-          <li ng-if="$root.currentUser"><a href="/my-account">Hello: {{ currentUser.profile.name }}</a></li>
+          <li ng-if="$root.currentUser"><a href="/my-account">Hello: [[ currentUser.profile.name ]]</a></li>
           <li ng-if="$root.currentUser"><a href="/admin/dashboard">Admin Page</a></li>
           <li ng-if="$root.currentUser"><a href="#" ng-click="signOut()">Sign out</a></li>
 

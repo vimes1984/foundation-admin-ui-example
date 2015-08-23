@@ -1,7 +1,7 @@
 <meteor-include src="topbar"></meteor-include>
 <div class="row">
   <div class="large-6 columns large-centered">
-    <h1>Hello: {{ currentUser.profile.name }}</h1>
+    <h1>Hello: [[ currentUser.profile.name ]]</h1>
     <p>This is the user account...</p>
     <form>
         <input type="text" disabled ng-model="formobject.username" />
@@ -13,7 +13,7 @@
 
     <h2>My Roles</h2>
     <ul>
-      <li ng-repeat="role in formobject.roles">{{role}}</li>
+      <li ng-repeat="role in formobject.roles">[[role]]</li>
     </ul>
 
     <ul>
