@@ -1,13 +1,13 @@
 //Super adim users
 var SuperAdminUsers = [
-  {_id: 'fYjb5Q2gsigk452v2'},
+  {_id: 'hRAWXTcpwc5AnHpD6'},
 ];
 Roles.addUsersToRoles(
   SuperAdminUsers,
   ['super-admin']
 );
 var contributorUsers = [
-  {_id: 'fYjb5Q2gsigk452v2'},
+  {_id: 'hRAWXTcpwc5AnHpD6'},
 ];
 Roles.addUsersToRoles(
   contributorUsers,
